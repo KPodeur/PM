@@ -260,3 +260,18 @@
 
 })(jQuery);
 
+//BUTTON POPUP//
+
+var btnPopup = document.getElementById('BtnPopup');
+var overlaybtn = document.getElementById('overlaybtn');
+var btnClose = document.getElementById('btnClose');
+
+btnPopup.addEventListener('click',openModal);
+btnClose.addEventListener('click',closePopup);
+
+function openModal(){
+	overlaybtn.style.display = 'block';
+}
+function closePopup() {
+	overlaybtn.style.display='none'
+}
