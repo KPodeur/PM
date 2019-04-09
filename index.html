@@ -50,17 +50,25 @@
 	    <div class="container d-flex align-items-center">
 	    	<a class="navbar-brand" href="index.html">Postezmoi</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+	        	<span class="oi oi-menu"></span> Menu
+	      		</button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">Les annonces</a></li>
 	        	<li class="nav-item"><a href="teacher.html" class="nav-link">Déposer un annonce</a></li>
 	        	<li class="nav-item"><a href="courses.html" class="nav-link">Product owner</a></li>
-	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Product owner</a></li>
+
+	        	<!-- Button users POPUP -->
+				<li class="nav-item" id="btnPopup"><a data-target="#myModal" data-toggle="modal" class="nav-link">Se connecter</a></li>
+				<div id="overlaybtn" class="overlaybtn">
+					<div id="popup" class="popup"> CONTACT
+						<span id="btnClose" class="btnClose"> &times;</span> 
+					</div>
+				</div>
+
 	        	<li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          	<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -102,7 +110,7 @@
             		<span class="flaticon-teacher"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Certified Teachers</h3>
+                <h3 class="heading">Envoi de courrier</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
@@ -113,7 +121,7 @@
             		<span class="flaticon-reading"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Special Education</h3>
+                <h3 class="heading">Demande d'expe</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>    
@@ -124,7 +132,7 @@
             		<span class="flaticon-books"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Book &amp; Library</h3>
+                <h3 class="heading">Le fonctionnement</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
@@ -135,7 +143,7 @@
             		<span class="flaticon-diploma"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Certification</h3>
+                <h3 class="heading">Service clientele</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
