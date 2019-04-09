@@ -260,18 +260,18 @@
 
 })(jQuery);
 
-//BUTTON POPUP//
+// //BUTTON POPUP
 
-var btnPopup = document.getElementById('BtnPopup');
-var overlaybtn = document.getElementById('overlaybtn');
-var btnClose = document.getElementById('btnClose');
+// var btnPopup = document.getElementById('BtnPopup');
+// var overlaybtn = document.getElementById('overlaybtn');
+// var btnClose = document.getElementById('btnClose');
 
-btnPopup.addEventListener('click',openModal);
-btnClose.addEventListener('click',closePopup);
+// btnPopup.addEventListener('click',openModal);
+// btnClose.addEventListener('click',closePopup);
 
-function openModal(){
-	overlaybtn.style.display = 'block';
-}
-function closePopup() {
-	overlaybtn.style.display='none'
-}
+// function openModal(){
+// 	overlaybtn.style.display = 'block';
+// }
+// function closePopup() {
+// 	overlaybtn.style.display='none'
+// }

@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
   <body>
 	  <div class="py-2 bg-primary">
@@ -60,10 +63,29 @@
 	        	<li class="nav-item"><a href="courses.html" class="nav-link">Product owner</a></li>
 
 	        	<!-- Button users POPUP -->
-				<li class="nav-item" id="btnPopup"><a data-target="#myModal" data-toggle="modal" class="nav-link">Se connecter</a></li>
-				<div id="overlaybtn" class="overlaybtn">
-					<div id="popup" class="popup"> CONTACT
-						<span id="btnClose" class="btnClose"> &times;</span> 
+	        	<!-- Trigger-->
+
+				<li class="nav-item"><a class="btn btn-info btn-lg nav-link" data-toggle="modal" data-target="#myModal">Se connecter</a></li>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+
+					<!-- Modal Content -->
+						<div class="modal-content">
+							<div class ="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title"> Se connecter </h4>
+							</div>
+								<div class="modal-body">
+									<p> Text </p>
+								</div>
+				</div>
+			</div>
+
+			</div>
+
+
+					 CONTACT
+						<span id="btnClose" class="btnClose" data-dismiss="modal"> &times;</span> 
 					</div>
 				</div>
 
