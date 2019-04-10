@@ -9687,29 +9687,41 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
-/*/BUTTON POP UP
+/*//POP UP//*
 
-#btnPopup{
-
+/* This adds padding from top and bottom */
+.custom-popup-class .mfp-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.overlaybtn{
-  position: fixed;
-  left:0px;
-  top:0px;
-  
-  width:100%;
+/* This adds max-width to popup content */
+.custom-popup-class .mfp-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* This makes "#popup-with-something" scale down proportionally */
+#popup-with-something {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  /* This is scale ratio */
+  padding-top: 56.25%;
+}
+/* This shifts close button outside of the container */
+#popup-with-something .mfp-close {
+  top: -44px;
+  color: #FFF;
+  text-align: right;
+  right: 1px;
+}
+/* This is an element itself */
+.some-element {
+  background: #EBE8E8;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
   height: 100%;
-  display: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .6);
 }
-.popup{
-  margin:20% auto;
-  width: 70%;
-  background-color: rgb(228,228,228);
-  border-radius: 5px;
-  box-shadow: 15px 20px 0 rgba(0,0,0,0.5);
-  padding:1em;
-}
-.btnClose{
-  float:right;
-  cursor:pointer;
-}*\

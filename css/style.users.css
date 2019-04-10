@@ -57,7 +57,7 @@ div.user-menu-container .thumbnail {
    border: 0px!important;
 }
 
-/* -- Vertical Button Group -- */
+/* -- Vertical Button Group -- 
 div.user-menu-container .btn-group-vertical {
     display: block;
 }
@@ -78,13 +78,13 @@ div.btn-group-vertical>a.active {
     background: #FA396F;
     box-shadow: none;
     color: white;
-}
-/* -- Individual button styles of vertical btn group -- */
+}*/
+/* -- Individual button styles of vertical btn group -- 
 div.user-menu-btns {
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
-}
+}*/
 
 div.user-menu-btns div.btn-group-vertical>a.active:after{
   content: '';
