@@ -260,18 +260,48 @@
 
 })(jQuery);
 
-//BUTTON POPUP//
+// //BUTTON POPUP
 
-var btnPopup = document.getElementById('BtnPopup');
-var overlaybtn = document.getElementById('overlaybtn');
-var btnClose = document.getElementById('btnClose');
+// var btnPopup = document.getElementById('BtnPopup');
+// var overlaybtn = document.getElementById('overlaybtn');
+// var btnClose = document.getElementById('btnClose');
 
-btnPopup.addEventListener('click',openModal);
-btnClose.addEventListener('click',closePopup);
+// btnPopup.addEventListener('click',openModal);
+// btnClose.addEventListener('click',closePopup);
 
-function openModal(){
-	overlaybtn.style.display = 'block';
-}
-function closePopup() {
-	overlaybtn.style.display='none'
-}
+// function openModal(){
+// 	overlaybtn.style.display = 'block';
+// }
+// function closePopup() {
+// 	overlaybtn.style.display='none'
+// }
+
+
+//users//
+
+$(document).ready(function() {
+    var $btnSets = $('#responsive'),
+    $btnLinks = $btnSets.find('a');
+ 
+    $btnLinks.click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.user-menu>div.user-menu-content").removeClass("active");
+        $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+    });
+});
+
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.view').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});

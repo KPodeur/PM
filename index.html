@@ -36,23 +36,34 @@
 	      <!-- ///// Adaptation de la navbar : suivi de la couleur sur l'element correspondant a la page affichée -->
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
+	        <ul class="navbar-nav ml-auto" style="margin-right: -11px;">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">Les annonces</a></li>
-	        	<li class="nav-item"><a href="teacher.html" class="nav-link">Déposer un annonce</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">Voir les  annonces</a></li>
+	        	<li class="nav-item"><a href="teacher.html" class="nav-link">Déposer une annonce</a></li>
 	        	<li class="nav-item"><a href="courses.html" class="nav-link">Product owner</a></li>
 
 	        	<!-- Button users POPUP -->
-				<li class="nav-item" id="btnPopup"><a data-target="#myModal" data-toggle="modal" class="nav-link">Se connecter</a></li>
-				<div id="overlaybtn" class="overlaybtn">
-					<div id="popup" class="popup"> CONTACT
-						<span id="btnClose" class="btnClose"> &times;</span> 
+	        	<!-- Trigger-->
+
+				<li class="nav-item"><a class=" btn btn-lg nav-link" data-toggle="modal" data-target="#myModal">Se connecter</a></li>
+				<div class="modal fade" id="myModal" role="contact">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class ="modal-header">
+							
+									<h4 class="modal-title"> Se connecter </h4>
+							</div>
+								<div class="modal-body">
+									<p> Text </p>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+						</div>
 					</div>
 				</div>
-
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
+				<li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
 	          	<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
+	      </div>
 	      </div>
 	    </div>
 	  </nav>

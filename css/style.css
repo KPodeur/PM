@@ -9687,10 +9687,10 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
-/*/BUTTON POP UP*/
+/*/BUTTON POP UP
 
 #btnPopup{
- 
+
 }
 .overlaybtn{
   position: fixed;
@@ -9712,4 +9712,4 @@ textarea.form-control {
 .btnClose{
   float:right;
   cursor:pointer;
-}
+}*\
