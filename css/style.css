@@ -5291,7 +5291,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #FF9900 !important; }
+  background-color: #fda638 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -8415,7 +8415,7 @@ h1, h2, h3, h4, h5,
   background: #fff !important; }
 
 .bg-primary {
-  background: #0000CD !important; }
+  background: #fda638 !important; }
 
 .bg-secondary {
   background: #fda638 !important; }
@@ -8424,10 +8424,10 @@ h1, h2, h3, h4, h5,
   background: #1eaaf1; }
 
 .bg-quarternary {
-  background: #fda638; }
+  background: #1eaaf1; }
 
 .bg-fifth {
-  background: #fda638; }
+  background: #1eaaf1; }
 
 .ftc-no-pb {
   padding-bottom: 0 !important; }
