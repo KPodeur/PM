@@ -38,8 +38,8 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto" style="margin-right: -13px;">
-            <li class="nav-item"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
-            <li class="nav-item active"><a href="recherche.html" class="nav-link">Voir les annonces</a></li>
+            <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
+            <li class="nav-item"><a href="recherche.html" class="nav-link">Voir les annonces</a></li>
             <li class="nav-item"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
             <!--<li class="nav-item"><a href="courses.html" class="nav-link">S'inscrire</a></li>-->
 
@@ -47,21 +47,7 @@
             <!-- Trigger-->
 
         <li class="nav-item"><a class=" btn btn-lg nav-link" data-toggle="modal" data-target="#myModal">Se connecter</a></li>
-        <div class="modal fade" id="myModal" role="contact">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class ="modal-header">
-              
-                  <h4 class="modal-title"> Se connecter </h4>
-              </div>
-                <div class="modal-body">
-                  <p> Text </p>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-            </div>
-          </div>
-        </div>
-        <li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
+        <li class="nav-item"><a href="fonctionnement.html" class="nav-link">Comment ça marche ?</a></li>
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -223,7 +209,38 @@
         </div>
       </div>
     </section> -->
-
+<!-- MODALS -->
+  <div class="modal fade" id="myModal" role="contact">
+    <div class="modal-dialog">
+      <div class="modal-content" >
+        <div class ="modal-header ">
+          <h4 class="modal-title" > Se connecter </h4>
+        </div>
+        <div class="modal-body">
+          <section class="ftco-section ftco-no-pt ftco-no-pb contact-section ">
+            <div class="row d-flex align-items-stretch no-gutters centered">
+              <div class="col-md-12 p-4 p-md-5 order-md-last bg-light">
+                <form action="#">
+                    <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Mot de passe"  maxlength="25" required>
+                    </div>
+                    <div class="form-group">
+                  <input type="submit" value="Envoyez" class="btn btn-primary py-3 px-5" style="margin-left:100px;margin-bottom: -39px;">
+                  </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+                  <div style="text-align: center;"> Cliquez ici pour vous <a href="courses.html">inscrire</a> </div>
+        </section>
+        <button type="button" id="close" data-dismiss="modal">&times;</button>
+      </div>
+    </div>
+  </div>
+  
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
