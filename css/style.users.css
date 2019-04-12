@@ -214,7 +214,6 @@ div.user-menu div.user-menu-content:not(.active){
 .square, .btn {
     border-radius: 0px!important;
 }
-
 /* -- media query for user profile image -- */
 @media (max-width: 767px) {
     .user-image {

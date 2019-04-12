@@ -38,30 +38,17 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto" style="margin-right: -13px;">
-            <li class="nav-item"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
+            <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
             <li class="nav-item"><a href="recherche.html" class="nav-link">Voir les annonces</a></li>
-            <li class="nav-item active"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
+            <li class="nav-item"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
             <!--<li class="nav-item"><a href="courses.html" class="nav-link">S'inscrire</a></li>-->
 
             <!-- Button users POPUP -->
             <!-- Trigger-->
 
         <li class="nav-item"><a class=" btn btn-lg nav-link" data-toggle="modal" data-target="#myModal">Se connecter</a></li>
-        <div class="modal fade" id="myModal" role="contact">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class ="modal-header">
-                  <h4 class="modal-title"> Se connecter </h4>
-              </div>
-                <div class="modal-body">
-                  <p> Text </p>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-            </div>
-          </div>
-        </div>
-        <li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="fonctionnement.html" class="nav-link">Comment ça marche ?</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
         </div>
@@ -81,10 +68,11 @@
         </div>
       </div>
     </section>
+
   <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="margin-top: 10px; margin-bottom: 10px;" data-stellar-background-ratio="0.5">
       <div class="container">
-        <div class="row" style="margin-left: 345px; width: 1000px;">
-          <div class="col-md-7 py-5 px-md-5 bg-primary">
+        <div class="searchbox">
+          <div class="col-md-auto py-5 px-md-5 bg-primary btn">
             <div class="heading-section heading-section-white ftco-animate mb-5">
               <span class="subheading"></span>
               <h2 class="mb-4">Déposer une annonce</h2>
@@ -111,11 +99,11 @@
                   <input type="number" class="form-control" placeholder="Nombre de lettres">
                 </div>
               </div>
-              <div class="d-md-flex">
+              <div class="d-md-flex row">
                	<div class="form-group">
                		<div>
                   		<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Information complementaire"></textarea>
-                  	</div>
+                  </div>
               	</div>
               <div class="d-md-flex">
                 <div class="form-group">
@@ -129,12 +117,12 @@
                 <div class="form-group ml-md-4">
                   <input type="submit" value="Déposer une annonce" class="btn btn-secondary py-3 px-4">
                 </div>
-              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -228,16 +216,16 @@
                     <input type="email" class="form-control" placeholder="Email" maxlength="50" required>
                     </div>
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Mot de passe"  maxlength="25" required>
+                    <input type="password" class="form-control" placeholder="Mot de passe"  maxlength="25" required>
                     </div>
                     <div class="form-group">
                 	<input type="submit" value="Envoyez" class="btn btn-primary py-3 px-5" style="margin-left:100px;margin-bottom: -39px;">
               		</div>
+              		<div style="text-align: center;"> Cliquez ici pour vous <a href="courses.html">inscrire</a> </div>
                   </form>
               </div>
             </div>
           </div>
-                  <div style="text-align: center;"> Cliquez ici pour vous <a href="courses.html">inscrire</a> </div>
         </section>
         <button type="button" id="close" data-dismiss="modal">&times;</button>
       </div>
