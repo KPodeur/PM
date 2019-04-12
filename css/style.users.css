@@ -214,12 +214,6 @@ div.user-menu div.user-menu-content:not(.active){
 .square, .btn {
     border-radius: 0px!important;
 }
-.star-rating {
-  line-height:32px;
-  font-size:1.25em;
-}
-
-.star-rating .fa-star{color: yellow;}
 /* -- media query for user profile image -- */
 @media (max-width: 767px) {
     .user-image {
