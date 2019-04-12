@@ -38,9 +38,9 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto" style="margin-right: -13px;">
-            <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
             <li class="nav-item"><a href="recherche.html" class="nav-link">Voir les annonces</a></li>
-            <li class="nav-item"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
+            <li class="nav-item active"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
             <!--<li class="nav-item"><a href="courses.html" class="nav-link">S'inscrire</a></li>-->
 
             <!-- Button users POPUP -->
@@ -93,10 +93,10 @@
               </div>
               <div class="d-md-flex">
                 <div class="form-group">
-                  <input type="number" class="form-control" placeholder="Commission">
+                  <input type="number" class="form-control" placeholder="Commission" min="0">
                 </div>
                 <div class="form-group ml-md-4">
-                  <input type="number" class="form-control" placeholder="Nombre de lettres">
+                  <input type="number" class="form-control" placeholder="Nombre de lettres" min="0">
                 </div>
               </div>
               <div class="d-md-flex row">
@@ -105,7 +105,7 @@
                   		<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Information complementaire"></textarea>
                   </div>
               	</div>
-              <div class="d-md-flex">
+              <div class="d-md-flex row">
                 <div class="form-group">
                   <input type="radio" class="form-control" id="envoyeur" name="annonce">
                   <label for="envoyeur">Envoyer</label>
@@ -113,12 +113,10 @@
                   <label for="transporteur">Transporter</label>
                 </div>
               </div>
-              <div class="d-md-flex">
                 <div class="form-group ml-md-4">
                   <input type="submit" value="Déposer une annonce" class="btn btn-secondary py-3 px-4">
                 </div>
             </form>
-          </div>
         </div>
       </div>
     </section>
