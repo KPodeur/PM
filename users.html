@@ -66,19 +66,18 @@
       </nav>
 <div class="container"><h1>Espace Utilisateur</h1></div>
 <div id="exTab1" class="container"> 
-<ul  class="nav nav-pills">
-            <li class="active">
-            <a href="#1a" data-toggle="tab">Tableau de bord</a>
+<ul  class="nav nav-pills" id="tab1">
+            <li class="active"><a href="#1a" data-toggle="tab">Tableau de bord</a>
             </li>
-            <li><a href="#2a" data-toggle="tab">Commandes à venir</a>
+            <li ><a href="#2a" data-toggle="tab">Commandes à venir</a>
             </li>
-            <li><a href="#3a" data-toggle="tab">Commandes passées</a>
+            <li><a href="#3a" data-toggle="tab" >Commandes passées</a>
             </li>
             <li><a href="#4a" data-toggle="tab">Notifications</a>
             </li>
-            <li><a href="#5a" data-toggle="tab">Messages</a>
+            <li><a href="#5a" data-toggle="tab" >Messages</a>
             </li>
-            <li><a href="#6a" data-toggle="tab">Profil</a>
+            <li class="tn"><a href="#6a" data-toggle="tab" >Profil</a>
             </li>
         </ul>
 
@@ -88,28 +87,48 @@
                     <span class="profil" ><a class="ajouterimage" href="#6a" alt="imageprofil" data-toggle="tab">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
                     <a href="#6a" data-toggle="tab"> Modifier le profil </a>
                 </div>
-                </div>
-                <div class="tab-pane" id="2a">
+               </div>
+               <ul class="experience row" style="margin-right: 210px;border-right-width: 0px;border-right-style: solid;padding-right: 0px;padding-top: -1px;padding-left: 253px;margin-top: -60px;margin-right: 25px;margin-left: 25px;">
+                                            <li class="step1" style="margin-right: 25px;margin-left: 25px;"><span>Débutant</span></li>
+                                            <li class="step2" style="margin-right: 25px;margin-left: 25px;"><span>Habitué</span></li>
+                                            <li class="step3" style="margin-right: 25px;margin-left: 25px;"><span>Confirmé</span></li>
+                                            <li class="step4" style="margin-right: 25px;margin-left: 25px;"><span>Expert</span></li>
+                                            <li class="step5" style="margin-right: 25px;margin-left: 25px;"><span>Ambassadeur</span></li>
+                                    </ul>
+                                        
+                                            
+                                    
+                <div class="tab-pane" id="2a" style="padding-top:25px;">
                     <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
                 </div>
-            <div class="tab-pane" id="3a">
+            <div class="tab-pane" id="3a" style="padding-top:25px;">
                 <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
             </div>
-            <div class="tab-pane" id="4a">
+            <div class="tab-pane" id="4a" style="padding-top:25px;">
+                <h3>We use css to change the background color of the content to be equal to the tab</h3> </div>
+            <div class="tab-pane" id="5a"style="padding-top:25px;">
                 <h3>We use css to change the background color of the content to be equal to the tab</h3>
             </div>
-            <div class="tab-pane" id="5a">
-                <h3>We use css to change the background color of the content to be equal to the tab</h3>
-            </div>
-            <div class="tab-pane active" id="6a">
+            <div class="tab-pane active" id="6a" style="padding-top:25px;">
                 <h3>Profil</h3>
             </div>
             </div>
   </div>
 
 <footer>
- 
 </footer>
+<script> 
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("ajouterimage");
+
+var btn = btnContainer.getElementsByClassName("tn");
+// Loop through the buttons and add the active class to the current/clicked button
+  btns.addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current.className = current.className.replace("active", "");
+    this.className += " active"; });
+</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.0/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
