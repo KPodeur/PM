@@ -2245,7 +2245,7 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #FFA500;
+  background-color: #343a40;
   border-color: #343a40; }
   .btn-dark:hover {
     color: #fff;
@@ -5292,7 +5292,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #fda638 !important; }
+  background-color: #343a40 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -8036,7 +8036,7 @@ h1, h2, h3, h4, h5,
     color: rgba(255, 255, 255, 0.7); }
 
 .ftco-navbar-light {
-  /*/background: transparent !important;*/
+  background: transparent !important;
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
@@ -8116,7 +8116,7 @@ h1, h2, h3, h4, h5,
         color: #fff;
         background: #1eaaf1; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #0000CD; }
+    color: #1eaaf1; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
         color: #fff; } }
@@ -8416,7 +8416,7 @@ h1, h2, h3, h4, h5,
   background: #fff !important; }
 
 .bg-primary {
-  background: #fda638 !important; }
+  background: #1eaaf1 !important; }
 
 .bg-secondary {
   background: #fda638 !important; }
