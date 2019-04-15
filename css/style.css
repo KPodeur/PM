@@ -9690,6 +9690,34 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
+.notif {
+background-color: #fda638;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 0px;
+border-top-right-radius: 10px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+min-width: 120px;
+padding-bottom: 10px;
+padding-left: 28px;
+padding-right: 28px;
+padding-top: 10px;
+position: relative;
+left: -15.5px;
+top : 10px;
+text-align: center;
+text-decoration: none;
+text-decoration-color: rgb(255, 255, 255);
+text-decoration-line: none;
+text-decoration-style: solid;
+font-size: 20px;
+}
+
 .searchbox{
   width: 600px;
   margin-left: 300.5px;
@@ -9760,5 +9788,4 @@ textarea.form-control {
   transform: 
     rotate(-45deg) 
     translate(2px, 1px);
-}
 }
