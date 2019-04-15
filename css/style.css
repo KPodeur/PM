@@ -9696,3 +9696,69 @@ textarea.form-control {
   margin-top: 56px;
 }
 
+.contbox{
+  position: relative;
+  top:30px;
+  right:26px;
+  left:-20px;
+  width:500px;
+  height:52px;
+  margin-left:125px;
+  margin-top:-10px;
+}
+
+.from{
+  color: #1eaaf1;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 24px;
+  margin-top:-5px;
+}
+
+.to{
+  color: #1eaaf1;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 24px;
+  margin-top:-5px;
+}
+
+.comm{
+  position: relative; top:-26px; left:370px;
+  color: #1eaaf1;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 24px;
+}
+
+  /* -- ARROW 5      -- */
+
+.arrow {
+  /* more triangle */
+  position: relative; top: 7px;
+  height: 0px; width: 0px;
+  border: 10px solid;
+  border-color: 
+    #fda638
+    #fda638
+    transparent
+    transparent;
+  transform: rotate(45deg); 
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: 2px; right: 0px;
+  display: block;
+  height: 9px;
+  width: 17px;
+  background-color: #fda638;
+  transform: 
+    rotate(-45deg) 
+    translate(2px, 1px);
+}
+}
