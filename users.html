@@ -4,13 +4,14 @@
     <title>Kiddos - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar.css">
-    <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar-print.css">
+  <!--  <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar.css">
+    <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar-print.css">-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -45,20 +46,24 @@
             <ul class="navbar-nav ml-auto" style="margin-right: -13px;">
                 <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Accueil</a></li>
                 <li class="nav-item"><a href="recherche.html" class="nav-link">Voir les annonces</a></li>
-                <li class="nav-item"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>          
+                <li class="nav-item"><a href="depot.html" class="nav-link">Déposer une annonce</a></li>
+                <!--<li class="nav-item"><a href="courses.html" class="nav-link">S'inscrire</a></li>-->
+
                 <!-- Button users POPUP -->
                 <!-- Trigger-->
 
-                <li class="nav-item"><a class=" btn btn-lg nav-link" data-toggle="modal" data-target="#myModal">Se connecter</a></li>
+                
                 <li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"> <a href="users.html">
+    <img src="https://img.icons8.com/ios/50/000000/user-filled.png" alt="users" style="margin-top: 14px;
+  margin-left: 15px;">
+</a> </li>
             </ul>
           </div>
           </div>
         </div>
       </nav>
-    <!-- END nav -->
-
 <div class="container"><h1>Espace Utilisateur</h1></div>
 <div id="exTab1" class="container"> 
 <ul  class="nav nav-pills">
@@ -67,11 +72,11 @@
             </li>
             <li><a href="#2a" data-toggle="tab">Commandes à venir</a>
             </li>
-            <li><a href="#3a" data-toggle="tab">Messages</a>
+            <li><a href="#3a" data-toggle="tab">Commandes passées</a>
             </li>
             <li><a href="#4a" data-toggle="tab">Notifications</a>
             </li>
-            <li><a href="#5a" data-toggle="tab">Commandes passées</a>
+            <li><a href="#5a" data-toggle="tab">Messages</a>
             </li>
             <li><a href="#6a" data-toggle="tab">Profil</a>
             </li>
@@ -80,8 +85,8 @@
             <div class="tab-content clearfix">
               <div class="tab-pane active" id="1a">
                 <div class="presentation">
-                    <span class="profil" ><a class="ajouterimage disabled" href="#6a" alt="imageprofil">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
-                    
+                    <span class="profil" ><a class="ajouterimage" href="#6a" alt="imageprofil" data-toggle="tab">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
+                    <a href="#6a" data-toggle="tab"> Modifier le profil </a>
                 </div>
                 </div>
                 <div class="tab-pane" id="2a">
