@@ -77,14 +77,14 @@
             </li>
             <li><a href="#5a" data-toggle="tab" >Messages</a>
             </li>
-            <li class="tn"><a href="#6a" data-toggle="tab" >Profil</a>
+            <li><a class="profil" href="#6a" data-toggle="tab" >Profil</a>
             </li>
         </ul>
 
             <div class="tab-content clearfix">
               <div class="tab-pane active" id="1a">
                 <div class="presentation">
-                    <span class="profil" ><a class="ajouterimage" href="#6a" alt="imageprofil" data-toggle="tab">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
+                    <span  ><a class="ajouterimage" href="#6a" alt="imageprofil" data-toggle="tab">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
                     <a href="#6a" data-toggle="tab"> Modifier le profil </a>
                 </div>
                </div>
@@ -109,25 +109,18 @@
             <div class="tab-pane" id="5a"style="padding-top:25px;">
                 <h3>We use css to change the background color of the content to be equal to the tab</h3>
             </div>
-            <div class="tab-pane active" id="6a" style="padding-top:25px;">
+            <div class="tab-pane" id="6a" style="padding-top:25px;">
                 <h3>Profil</h3>
             </div>
             </div>
   </div>
-
 <footer>
 </footer>
 <script> 
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("ajouterimage");
-
-var btn = btnContainer.getElementsByClassName("tn");
-// Loop through the buttons and add the active class to the current/clicked button
-  btns.addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current.className = current.className.replace("active", "");
-    this.className += " active"; });
+$('span > a').click(function() {
+    $('li').removeClass();
+    $('li > a.profil').parent().addClass('active');
+});
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.0/umd/popper.min.js"></script>
