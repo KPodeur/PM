@@ -293,4 +293,9 @@ $('.open-popup-link').magnificPopup({
 //         function(){
 //             $(this).find('.caption').slideUp(250); //.fadeOut(205)
 //         }
-//     ); 
+//     );
+
+// Petite notification qui apparait lorsque l'on laisse la souris sur l'élément
+	$(document).onmouseover(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    });
