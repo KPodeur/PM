@@ -8444,13 +8444,13 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #1eaaf1;
+    background: #4286f4;
     border: 1px solid #1eaaf1;
     color: #fff; }
     .btn.btn-primary:hover {
       border: 1px solid #1eaaf1;
       background: transparent;
-      color: #1eaaf1; }
+      color: #fff; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #1eaaf1;
       background: transparent;
