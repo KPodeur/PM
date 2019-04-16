@@ -34,7 +34,7 @@
   <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
         <div class="container d-flex align-items-center">
-            <a class="navbar-brand" href="index.html">Postez Moi !</a>
+            <a class="navbar-brand" href="index.html"><span style="color: #1eaaf1;" > Postez </span><span style="color: orange;"> Moi ! </span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 
             <span class="oi oi-menu"></span> Menu
@@ -53,7 +53,7 @@
                 <!-- Trigger-->
 
                 
-                <li class="nav-item"><a href="blog.html" class="nav-link">Comment ça marche ?</a></li>
+                <li class="nav-item"><a href="fonctionnement.html" class="nav-link">Comment ça marche ?</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item"> <a href="users.html">
     <img src="https://img.icons8.com/ios/50/000000/user-filled.png" alt="users" style="margin-top: 14px;
@@ -85,7 +85,7 @@
               <div class="tab-pane active" id="1a">
                 <div class="presentation">
                     <span  ><a class="ajouterimage" href="#6a" alt="imageprofil" data-toggle="tab">Ajouter photo</a><h3 class="welcome">Bonjour Kévin</h3></span>
-                    <a href="#6a" data-toggle="tab"> Modifier le profil </a>
+                   <span> <a href="#6a" data-toggle="tab" class="profil"> Modifier le profil </a></span>
                 </div>
                
                <ul class="experience row" style="margin-right: 210px;border-right-width: 0px;border-right-style: solid;padding-right: 0px;padding-top: -1px;padding-left: 253px;margin-top: -60px;margin-right: 25px;margin-left: 25px;">
@@ -121,17 +121,138 @@
                 <h3>We use css to change the background color of the content to be equal to the tab</h3>
             </div>
             <div class="tab-pane" id="6a" style="padding-top:25px;">
-                <h3>Profil</h3>
+                <div class="container">
+    				<h1>Modifier Profil</h1>
+  						<hr>
+							<div class="row">
+      							<!-- left column -->
+      						<div class="col-md-3">
+       						<div class="text-center">
+          					<img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+          					<h6>Ajouter une photo de profil...</h6> <!-- Modifier après en avoir déjà une -->
+          
+        <input type="file" id="hiddenfile" style="display:none" name="file" onChange="getvalue();"/>
+		<input type="text" id="selectedfile" value="Choisissez un fichier"/>
+		<input type="button" value="Select a file" onclick="getfile();"/>
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          C'est une <strong>.alerte</strong>. Utilise ceci pour montrer un message important à l'utilisateur.
+        </div>
+        <h3>Infos personelles</h3>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Prénom:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Prénom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Nom:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Pays:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Ville:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Code Postal:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="number" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="janesemail@gmail.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Fuseau horaire:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                  <option value="Alaska">(GMT-09:00) Alaska</option>
+                  <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                  <option value="Arizona">(GMT-07:00) Arizona</option>
+                  <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                  <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                  <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Nom d'utilisateur:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="janeuser">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Mot de passe:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confimer mot de passe:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="button" class="btn btn-primary" value="Sauvegarder les changements">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Annuler">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
             </div>
             </div>
   </div>
 <footer>
 </footer>
+
+
+<!-- ONGLET ACTIF -->
 <script> 
 $('span > a').click(function() {
-    $('li').removeClass();
+    $('li').removeClass();												
     $('li > a.profil').parent().addClass('active');
 });
+</script>
+<!-- Input file en texte -->
+<script>
+function getfile(){
+        document.getElementById('hiddenfile').click();
+    }
+    function getvalue(){
+        document.getElementById('selectedfile').value=document.getElementById('hiddenfile').value;
+    }
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.0/umd/popper.min.js"></script>
