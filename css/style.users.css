@@ -201,6 +201,8 @@ body {
   color : white;
   background-color: #428bca;
   padding : 5px 15px;
+  height:100%;
+
 }
 
 #exTab2 h3 {
@@ -213,6 +215,7 @@ body {
 
 #exTab1 .nav-pills > li > a {
   border-radius: 0;
+  border-radius: 10px 10px 0px 0px;
 }
 
 /* change border radius for the tab , apply corners on top*/
@@ -225,6 +228,7 @@ body {
   color : white;
   background-color: #428bca;
   padding : 5px 15px;
+
 }
 
 .ajouterimage{
@@ -246,5 +250,18 @@ body {
   font-size: 27px;
 
 }
+.menuprofil{
 
+  height:500px;
+  width:200px;
+  margin-top:42px;
+  margin-left:30px;
+  border: solid 10px black;
+  padding-left: 17px;
+}
+.separation{
 
+  background: black;
+  width:1197px;
+  margin-left:-12px;
+}
