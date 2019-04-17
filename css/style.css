@@ -53,7 +53,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 401;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -8210,7 +8210,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #f1453d; }
+    background: #fda638; }
   .hero-wrap.hero-wrap-2 {
     height: 300px; }
     .hero-wrap.hero-wrap-2 .slider-text {
@@ -8543,7 +8543,7 @@ h1, h2, h3, h4, h5,
       border-radius: 50%; }
       .ftco-services .services .icon span {
         font-size: 50px;
-        color: #1eaaf1; }
+        color: #fda638; }
     .ftco-services .services .media-body {
       color: rgba(255, 255, 255, 0.8); }
       @media (max-width: 767.98px) {
@@ -9690,6 +9690,30 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
+  /* pade d'accueil */
+.annoncesRecentes{
+  background-image: url(../images/bg_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(253, 166, 56, 0.5);
+}
+
+.fondOrange{
+  background-color: #fda638;
+}
+
+#iconEnvelope{
+  background-image: url(../images/mail-send.svg);
+  background-size: cover; 
+  width: 52px;
+  height: 48px;
+  margin-right:4px;
+  margin-bottom:2px;
+}
+
+
+    /* Page Voir annonces */
 .notif {
 background-color: #fda638;
 border-bottom-left-radius: 0px;
@@ -9805,6 +9829,9 @@ font-size: 22px;
 }
 
 #userPicture{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   max-width: 100%;
   max-height: 100%;
   border-radius: 50px 50px 50px 50px;
@@ -9836,7 +9863,11 @@ font-size: 22px;
 
 /*search box css start here*/
 .search-sec{
-    padding: 2rem;
+  padding-top:28px;
+  padding-left: 2em; 
+  padding-right: 2em;
+  padding-bottom:0px;
+
 }
 .search-slt{
     display: block;
@@ -9862,7 +9893,7 @@ font-size: 22px;
     .search-sec{
         position: relative;
         top: 0px;
-        background: rgba(30, 170, 241, 0.3);
+        background: rgba(30, 170, 241);
     }
 }
 
@@ -9950,4 +9981,26 @@ font-size: 22px;
 }
 .rel {
     position: relative;
+
+  /* Page voir plus */
+.jours{
+  position: relative;
+  left: 222px; bottom: 40px;
+}
+
+#content{
+  height: 1600px;
+  padding: 20px 0px;
+}
+
+.aside{
+  max-width: 270px;
+  height: 1000px;
+  display: flex;
+}
+
+.detailVoyage{
+  width: 250px; height: 250px;
+  background-color: #fda638;
+  border-radius: 5px;
 }
