@@ -2145,4 +2145,237 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+// AVIS
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+$padding: 20px;
+
+body {
+	font-family: 'Montserrat';
+	letter-spacing: .35px;
+	font-family: 'overpass';
+	letter-spacing: .5px;
+	font-family: 'Nunito';
+	letter-spacing: .25px;
+	font-weight: 300;
+	line-height: 1.625;
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+section {
+	& > * {
+		border-radius: 3px;
+		box-shadow: 0 10px 15px -10px rgba(0,0,0,.25);
+	}
+	&#reviews {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+.review {
+	background: #fff;
+	margin-bottom: #{$padding * 1.5};
+	
+	& > * {
+		padding: #{$padding / 2} $padding;
+		
+		& ~ * {
+			padding-top: 0;
+		}
+		
+		&:first-child {
+			padding-top: $padding;
+		}
+		
+		&:last-child {
+			padding-bottom: $padding;
+		}
+	}
+	
+	p,
+	h2,
+	h3,
+	h4 {
+		margin: 0;
+	}
+	
+	.avatar {
+		width: 64px;
+		border-radius: 50%;
+		filter: contrast(1.1);
+		border: 2px solid #fff;
+		margin: -2px;
+		margin-right: $padding;
+		float: left;
+	}
+	
+	.header {
+		position: relative;
+		
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		
+		.star {
+			width: 21px;
+			margin-right: #{$padding / 4};
+		}
+		
+		.meta {
+			position: absolute;
+			top: 50%;
+			left: #{$padding * 2 + 64};
+			transform: translateY( calc(-50% + 4.5px) );
+		}
+	}
+	
+	.title {
+		font-size: 20px;
+		font-weight: 600;
+		color: #3cabbb;
+
+		&:before,
+		&:after {
+			content: '"';
+		}
+	}
+	
+	.content {
+		font-size: 18px;
+		font-weight: 300;
+		color: rgba(0,0,0,.75);
+		position: relative;
+		
+		.read-more {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translate(#{$padding / 2}, #{$padding / 2});
+			background: #3cabbb;
+			color: #fff;
+			padding: #{$padding / 3} #{$padding / 1.5};
+			border-radius: 2px;
+			font-size: 75%;
+			box-shadow: 0 0 8px -2px rgba(0,0,0,.5);
+			
+			&:hover {
+				background: lighten(#3cabbb, 5%);
+			}
+		}
+	}
+}
+
+.button {
+	text-decoration: none;
+}
+
+.star {		
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.earned {
+		fill: #ffbb58;
+	}
+
+	&.missed {
+		fill: #e2e2e6;
+	}
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+	animation-duration: .25s;
+	animation-timing-function: cubic-bezier(.83,0,.57,1.62);
+}

@@ -77,6 +77,7 @@ margin-right: 900px;
 background-color: #fd7e14;
 border-radius:10px 10px 10px 10px;
 color : white;
+margin-right:846px;
 }
 
 /* MESSAGE BOX*/
@@ -214,4 +215,13 @@ img{ max-width:100%;}
 .msg_history {
   height: 516px;
   overflow-y: auto;
+}
+
+.accepted{
+  position: relative;
+  bottom: -124px;
+  right: -350px;
+  color: #1eaaf1;
+  font-size: 22px;
+  font-weight: bold;
 }

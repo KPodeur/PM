@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Kiddos - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Postez Moi !</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
@@ -13,8 +13,7 @@
   <!--  <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar.css">
     <link rel="stylesheet" src="https://cdn.blablacar.com/comuto3/assets/1554729198/assets/build/css/blablacar-print.css">-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
 <!------ Include the above in your HEAD tag ---------->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
 <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
@@ -30,6 +29,11 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.users.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-panel.css">
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap-grid.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/bootstrap/style.scss">
   </head>
   <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
@@ -73,7 +77,7 @@
             </li>
             <li><a href="#3a" data-toggle="tab" >Commandes passées</a>
             </li>
-            <li><a href="#4a" data-toggle="tab">Notifications</a>
+            <li><a href="#4a" data-toggle="tab">Avis</a>
             </li>
             <li><a href="#5a" data-toggle="tab" >Messages</a>
             </li>
@@ -110,23 +114,81 @@
                                             
                 </div>                   
                 <div class="tab-pane" id="2a" style="padding-top:25px;">
-                    <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+                    <section class="container" style="width: 800px; margin-top: 80px;">
+      <div class="panel panel-default" style="border-bottom-width: -34px;margin-bottom: 36px;border-top-width: 0px;padding-top: -4px;">
+        <div class="panel-heading">
+          <div class="cell">
+            <span class="notif">Envoi</span>
+            <div class="contbox row">
+              <span class="from">France </span>
+              <div class="arrowed">
+                <div class="arrow"></div>
+              </div>
+              <span class="to"> Canada</span>
+            </div>
+            <span class="comm">Commission proposée : 15€</span>
+            <div class="accepted"> Commande accepté le 17 avril 2019</div>
+          </div>
+
+        </div>
+
+        <div class="panel-body" style="padding:6px;margin-bottom: -39px;">
+          <div class="userBox">
+            <div class="avatar">
+              <a href="#">
+                <img id="userPicture" src="images/teacher-7.jpg">
+              </a>
+              <div class="verifiedBadge"></div>
+            </div>
+            <div>
+              <span id="userName">Sandrine</span>
+              <div>
+                <a href="#" data-toggle="tooltip" title="Numéro de téléphone vérifié"><span class="fa fa-mobile-phone icone" style="font-size: 34px;"></span></a>
+                <a href="#" data-toggle="tooltip" title="Pièce d'identité vérifiée"><span class="far fa-address-card icone"></span></a>
+                <a href="#" data-toggle="tooltip" title="Adresse email vérifiée"><span class="fas fa-envelope icone"></span></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form action="voirplus.html" class="appointment-form ftco-animate">
+              <input type="submit" value="Voir plus" class="btn btn-secondary py-3 px-4" style="position: relative; left: 588px; bottom: 110px;">
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
                 </div>
             <div class="tab-pane" id="3a" style="padding-top:25px;">
                 <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
             </div>
             <div class="tab-pane" id="4a" style="padding-top:25px;">
-                <h3>We use css to change the background color of the content to be equal to the tab</h3> </div>
+                <section id="reviews">
+  <div class="review" data-rating="4">
+    <div class="header">
+			<img class="avatar" src="https://xhynk.com/public/img/alex-crop.jpeg" />
+			<div class="meta">
+				<h3 class="reviewer">Alexander Demchak</h3>
+				<i class="stars"></i>
+			</div>
+    </div>
+		<div class="title">Long Time Fan of their Work!</div>
+    <div class="content">
+      <p class="excerpt">I'm a big fan of Demonstration Company! Especially the individuals that make up the Demonstration Company team. Beyond just smiling faces, they simply have the best pers… <a class="button read-more" href="#">Read Review</a></p>
+    </div>
+  </div>
+</section>
+</div>
             <div class="tab-pane" id="5a"style="padding-top:25px;">
           
 <div class="container">
-<h3 class=" text-center">Messaging</h3>
+<h3 class=" text-center">Messagerie</h3>
 <div class="messaging">
       <div class="inbox_msg">
         <div class="inbox_people">
           <div class="headind_srch">
             <div class="recent_heading">
-              <h4>Recent</h4>
+              <h4>Récent</h4>
             </div>
             <div class="srch_bar">
               <div class="stylish-input-group">
@@ -141,9 +203,8 @@
               <div class="chat_people">
                 <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
                 <div class="chat_ib">
-                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                  <p>Test, which is a new approach to have all solutions 
-                    astrology under one roof.</p>
+                  <h5>Erwann Goasdoué <span class="chat_date">17 Avril</span></h5>
+                  <p>Bonjour, avez vous des disponibilités ?</p>
                 </div>
               </div>
             </div>
@@ -275,18 +336,19 @@
           
         <input type="file" id="hiddenfile" style="display:none" name="file" onChange="getvalue();"/>
 		<input type="text" id="selectedfile" value="Choisissez un fichier"/>
-		<input type="button" value="Select a file" onclick="getfile();"/>
+		<input type="button" value="Choisissez un fichier" onclick="getfile();"/>
         </div>
       </div>
       
       <!-- edit form column -->
+      <!--ALERTE NOTIFICATION -->
       <div class="col-md-9 personal-info">
         <div class="alert alert-info alert-dismissable">
           <a class="panel-close close" data-dismiss="alert">×</a> 
           <i class="fa fa-coffee"></i>
           C'est une <strong>alerte</strong>. Utilise ceci pour montrer un message important à l'utilisateur.
         </div>
-
+	
         <h3 style="padding-left: 391px; padding-top: 8px;">Infos personelles</h3>
         
         <form class="form-horizontal" role="form">
@@ -331,14 +393,88 @@
             <div class="col-lg-8">
               <div class="ui-select">
                 <select id="user_time_zone" class="form-control" style="border-radius: 10px 10px 10px 10px">
-                  <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                  <option value="Alaska">(GMT-09:00) Alaska</option>
-                  <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-                  <option value="Arizona">(GMT-07:00) Arizona</option>
-                  <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-                  <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-                  <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-                  <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                  <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
+	<option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
+	<option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
+	<option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
+	<option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+	<option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
+	<option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
+	<option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+	<option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+	<option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
+	<option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+	<option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+	<option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>
+	<option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+	<option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+	<option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>
+	<option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+	<option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>
+	<option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
+	<option timeZoneId="20" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Santiago</option>
+	<option timeZoneId="21" gmtAdjustment="GMT-03:30" useDaylightTime="1" value="-3.5">(GMT-03:30) Newfoundland</option>
+	<option timeZoneId="22" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Brasilia</option>
+	<option timeZoneId="23" gmtAdjustment="GMT-03:00" useDaylightTime="0" value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+	<option timeZoneId="24" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Greenland</option>
+	<option timeZoneId="25" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Montevideo</option>
+	<option timeZoneId="26" gmtAdjustment="GMT-02:00" useDaylightTime="1" value="-2">(GMT-02:00) Mid-Atlantic</option>
+	<option timeZoneId="27" gmtAdjustment="GMT-01:00" useDaylightTime="0" value="-1">(GMT-01:00) Cape Verde Is.</option>
+	<option timeZoneId="28" gmtAdjustment="GMT-01:00" useDaylightTime="1" value="-1">(GMT-01:00) Azores</option>
+	<option timeZoneId="29" gmtAdjustment="GMT+00:00" useDaylightTime="0" value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+	<option timeZoneId="30" gmtAdjustment="GMT+00:00" useDaylightTime="1" value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+	<option timeZoneId="31" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+	<option timeZoneId="32" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+	<option timeZoneId="33" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+	<option timeZoneId="34" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+	<option timeZoneId="35" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) West Central Africa</option>
+	<option timeZoneId="36" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Amman</option>
+	<option timeZoneId="37" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+	<option timeZoneId="38" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Beirut</option>
+	<option timeZoneId="39" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Cairo</option>
+	<option timeZoneId="40" gmtAdjustment="GMT+02:00" useDaylightTime="0" value="2">(GMT+02:00) Harare, Pretoria</option>
+	<option timeZoneId="41" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+	<option timeZoneId="42" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Jerusalem</option>
+	<option timeZoneId="43" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Minsk</option>
+	<option timeZoneId="44" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Windhoek</option>
+	<option timeZoneId="45" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+	<option timeZoneId="46" gmtAdjustment="GMT+03:00" useDaylightTime="1" value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+	<option timeZoneId="47" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Nairobi</option>
+	<option timeZoneId="48" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Tbilisi</option>
+	<option timeZoneId="49" gmtAdjustment="GMT+03:30" useDaylightTime="1" value="3.5">(GMT+03:30) Tehran</option>
+	<option timeZoneId="50" gmtAdjustment="GMT+04:00" useDaylightTime="0" value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+	<option timeZoneId="51" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Baku</option>
+	<option timeZoneId="52" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Yerevan</option>
+	<option timeZoneId="53" gmtAdjustment="GMT+04:30" useDaylightTime="0" value="4.5">(GMT+04:30) Kabul</option>
+	<option timeZoneId="54" gmtAdjustment="GMT+05:00" useDaylightTime="1" value="5">(GMT+05:00) Yekaterinburg</option>
+	<option timeZoneId="55" gmtAdjustment="GMT+05:00" useDaylightTime="0" value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+	<option timeZoneId="56" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
+	<option timeZoneId="57" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+	<option timeZoneId="58" gmtAdjustment="GMT+05:45" useDaylightTime="0" value="5.75">(GMT+05:45) Kathmandu</option>
+	<option timeZoneId="59" gmtAdjustment="GMT+06:00" useDaylightTime="1" value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+	<option timeZoneId="60" gmtAdjustment="GMT+06:00" useDaylightTime="0" value="6">(GMT+06:00) Astana, Dhaka</option>
+	<option timeZoneId="61" gmtAdjustment="GMT+06:30" useDaylightTime="0" value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
+	<option timeZoneId="62" gmtAdjustment="GMT+07:00" useDaylightTime="0" value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+	<option timeZoneId="63" gmtAdjustment="GMT+07:00" useDaylightTime="1" value="7">(GMT+07:00) Krasnoyarsk</option>
+	<option timeZoneId="64" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+	<option timeZoneId="65" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
+	<option timeZoneId="66" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+	<option timeZoneId="67" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Perth</option>
+	<option timeZoneId="68" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Taipei</option>
+	<option timeZoneId="69" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+	<option timeZoneId="70" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Seoul</option>
+	<option timeZoneId="71" gmtAdjustment="GMT+09:00" useDaylightTime="1" value="9">(GMT+09:00) Yakutsk</option>
+	<option timeZoneId="72" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Adelaide</option>
+	<option timeZoneId="73" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Darwin</option>
+	<option timeZoneId="74" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Brisbane</option>
+	<option timeZoneId="75" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+	<option timeZoneId="76" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Hobart</option>
+	<option timeZoneId="77" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Guam, Port Moresby</option>
+	<option timeZoneId="78" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Vladivostok</option>
+	<option timeZoneId="79" gmtAdjustment="GMT+11:00" useDaylightTime="1" value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+	<option timeZoneId="80" gmtAdjustment="GMT+12:00" useDaylightTime="1" value="12">(GMT+12:00) Auckland, Wellington</option>
+	<option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+	<option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
                 </select>
               </div>
             </div>
@@ -397,9 +533,44 @@ function getfile(){
         document.getElementById('selectedfile').value=document.getElementById('hiddenfile').value;
     }
 </script>
+<!-- Avis -->
+<script> function starSVG(classes){
+		return `<svg viewBox="-1 0 23 21" class="star `+ classes +`"><path d="M11.4428797,0.682367821 L13.1475073,5.91258374 C13.3362303,6.49202457 13.8779163,6.88340127 14.4879506,6.88340127 L20.0068228,6.88340127 C20.9667598,6.88340127 21.3666485,8.10734296 20.5893138,8.66950222 L16.1242299,11.9021721 C15.6304898,12.2600022 15.4244247,12.8943375 15.6131477,13.4727617 L17.3177753,18.7029777 C17.6146315,19.6128014 16.5700242,20.3691242 15.7937097,19.8069649 L11.3286258,16.574295 C10.8348856,16.2164649 10.1656841,16.2164649 9.67194396,16.574295 L5.20686008,19.8069649 C4.43054552,20.3691242 3.38491815,19.6128014 3.68177431,18.7029777 L5.38742207,13.4727617 C5.57614506,12.8943375 5.36905984,12.2600022 4.87531969,11.9021721 L0.410235806,8.66950222 C-0.366078756,8.10734296 0.0327898298,6.88340127 0.992726759,6.88340127 L6.51159901,6.88340127 C7.12265344,6.88340127 7.6633193,6.49202457 7.85204228,5.91258374 L9.55769005,0.682367821 C9.85454621,-0.22745594 11.1460235,-0.22745594 11.4428797,0.682367821"stroke="none" fill-rule="evenodd"></path></svg>`;
+}
+
+jQuery(document).ready(function($){
+	$('.review').each(function(){
+		var $review 		= $(this);
+		var timing			= 200;
+		var rating		  = $review.attr('data-rating');
+		var starEarned  = starSVG('earned bounceIn');
+		var starMissed  = starSVG('missed');
+		var starMissed5 = starSVG('missed').repeat(5);
+		var starsEarned = starSVG('earned').repeat(rating);
+		var starsMissed = starSVG('missed').repeat( 5 - rating );
+		
+		$review.find('i').prepend(starMissed5);
+		
+		var starCounter = 0;
+		var starPlop = setInterval(function(){
+			starCounter++;
+			if( starCounter == rating ){
+				clearInterval( starPlop );
+				
+				setTimeout(function(){
+						$review.find('.star.earned').removeClass('zoomOut').addClass('bounceIn');
+				}, timing*2);
+			}
+			
+			$(starEarned).insertBefore( $review.find('.star.missed').first() );
+			$review.find('.star.missed').first().remove();
+		}, timing);
+	});
+});</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.0/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <!-- Jsais pas pk ca fonctionne avec celui ci -->
-
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
