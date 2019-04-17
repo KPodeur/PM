@@ -9835,7 +9835,11 @@ font-size: 22px;
 
 /*search box css start here*/
 .search-sec{
-    padding: 2rem;
+  padding-top:28px;
+  padding-left: 2em; 
+  padding-right: 2em;
+  padding-bottom:0px;
+
 }
 .search-slt{
     display: block;
@@ -9861,7 +9865,7 @@ font-size: 22px;
     .search-sec{
         position: relative;
         top: 0px;
-        background: rgba(30, 170, 241, 0.3);
+        background: rgba(30, 170, 241);
     }
 }
 
@@ -9869,4 +9873,9 @@ font-size: 22px;
     .search-sec{
         background: #1A4668;
     }
+}
+
+.jours{
+  position: relative;
+  left: 222px; bottom: 40px;
 }
