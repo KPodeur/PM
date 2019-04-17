@@ -9704,11 +9704,12 @@ textarea.form-control {
 }
 
 #iconEnvelope{
-  width:50px;
-  margin-right: 8px;
-  margin-bottom: 5px;
-  color: #fda638;
-  fill: #fda638;
+  background-image: url(../images/mail-send.svg);
+  background-size: cover; 
+  width: 52px;
+  height: 48px;
+  margin-right:4px;
+  margin-bottom:2px;
 }
 
 
