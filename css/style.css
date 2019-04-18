@@ -9691,17 +9691,6 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
   /* pade d'accueil */
-.annoncesRecentes{
-  background-image: url(../images/bg_2.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: rgba(253, 166, 56, 0.5);
-}
-
-.fondOrange{
-  background-color: #fda638;
-}
 
 #iconEnvelope{
   background-image: url(../images/mail-send.svg);
@@ -9710,6 +9699,15 @@ textarea.form-control {
   height: 48px;
   margin-right:4px;
   margin-bottom:2px;
+}
+
+.annoncesRecentes{
+  width: 100%;
+  height: 330px;
+}
+
+.fondOrange{
+  background-color: #fda638;
 }
 
 
@@ -9980,10 +9978,11 @@ font-size: 22px;
     font-size: 13px;
 }
 .rel {
-    position: relative;
-
+  position: relative;
+}
   /* Page voir plus */
-.jours{
+
+.jours {
   position: relative;
   left: 222px; bottom: 40px;
 }
