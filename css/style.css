@@ -8949,10 +8949,10 @@ textarea.form-control {
     -ms-border-radius: 0;
     border-radius: 0; }
     .ftco-footer .subscribe-form .form-group input {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      border-radius: 40px;
       width: 100%;
       background: rgba(255, 255, 255, 0.1) !important;
       border: none;
@@ -8973,12 +8973,12 @@ textarea.form-control {
     .ftco-footer .subscribe-form .form-group .submit {
       color: #fff !important;
       font-size: 16px;
-      background: #5d50c6 !important;
+      background: #fda638 !important;
       border: none !important;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      border-radius: 40px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
