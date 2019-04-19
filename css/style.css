@@ -9702,6 +9702,12 @@ textarea.form-control {
 }
 
 .annoncesRecentes{
+  width: 100%;
+  height: 330px;
+  background-color: rgba(176, 224, 230, 0.4);
+}
+
+.annoncesRecentes_custom{
   width: 98.7%;
   height: 330px;
   margin: 0px 20px 0px 16px;
@@ -9796,7 +9802,7 @@ textarea.form-control {
 }
 
 .arrow_custom{
-  position: relative; left: 105px; top: -10px;
+  position: relative; left: 116px; bottom: 10px;
   height: 0px; width: 0px;
   border: 8px solid;
   border-color: 
